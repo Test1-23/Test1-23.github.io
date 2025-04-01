@@ -2,6 +2,56 @@
   
   <head>
   <title style="text-align:center;font-size:40px;">tHe TeSt sIte</title>
+    <style>
+        /* 方法1：使用Flexbox使按钮居中（推荐） */
+        .container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center;    /* 垂直居中 */
+            height: 100vh;         /* 使容器占满整个视口高度 */
+            background: #f5f5f5;   /* 添加背景色便于观察 */
+        }
+
+        /* 按钮基本样式 */
+        .my-button {
+            /* 位置 */
+            margin: 20px;         /* 外边距 */
+            
+            /* 边框样式 */
+            border: 1px solid #3498db;  /* 边框宽度、样式和颜色 */
+            border-radius: 4px;         /* 圆角边框 */
+            
+            /* 字体样式 */
+            color: #ffffff;        /* 字体颜色 */
+            font-size: 16px;       /* 字体大小 */
+            font-weight: bold;     /* 字体粗细 */
+            font-family: Arial, sans-serif; /* 字体类型 */
+            
+            /* 背景和内边距 */
+            background-color: #3498db; /* 背景色 */
+            padding: 12px 24px;       /* 内边距：上下12px，左右24px */
+            
+            /* 其他效果 */
+            cursor: pointer;       /* 鼠标悬停时显示手型 */
+            transition: all 0.3s;  /* 过渡动画效果 */
+        }
+
+        /* 鼠标悬停效果 */
+        .my-button:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+            transform: scale(1.05); /* 轻微放大效果 */
+        }
+
+        /* 方法2：使用Grid布局使按钮居中（备选方案） */
+        /*
+        .container {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        */
+    </style>
   </head>
 
 
@@ -11,7 +61,7 @@
   
   <button type="button"
     onclick="window.open('https://www.bilibili.com/video/BV1GJ411x7h7')"
-    style:>
+    >
     click. :)  click
   </button>
   
